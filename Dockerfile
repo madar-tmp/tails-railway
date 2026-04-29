@@ -25,5 +25,5 @@ WORKDIR /app
 COPY start.sh .
 RUN chmod +x start.sh
 
-# Railway runs as a non-root user; ensure /tmp is usable for the socket
+# Start the script
 CMD ["./start.sh"]
